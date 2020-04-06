@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Pricing Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <img class="bg-top" src="images/bg-top.svg" alt="top background" />
+
+    <h1>Our Pricing</h1>
+
+    <div class="row">
+      <span class="selector-text">Annually</span>
+      <label class="switch">
+        <input id="toggler" type="checkbox" />
+        <div class="slider"></div>
+      </label>
+      <span class="selector-text">Monthly</span>
+    </div>
+
+    <div class="row" id="pricing">
+
+      <div class="card">
+        <h2 class="card-title">Basic</h2>
+        <h1 class="row price-title">
+          <span>$</span>
+          <span class="price basic">19.99</span>
+        </h1>
+        <hr class="seperator" />
+        <p class="text">500 GB Storage</p>
+        <hr class="seperator" />
+        <p class="text">2 Users Allowed</p>
+        <hr class="seperator" />
+        <p class="text">Send up to 3 GB</p>
+        <hr class="seperator" />
+        <button class="btn">LEARN MORE</button>
+      </div>
+
+      <div class="card card-middle">
+        <h2 class="card-title">Professional</h2>
+        <h1 class="row price-title">
+          <span>$</span>
+          <span class="price professional">24.99</span>
+        </h1>
+        <hr class="seperator" />
+        <p class="text">1 TB Storage</p>
+        <hr class="seperator" />
+        <p class="text">5 Users Allowed</p>
+        <hr class="seperator" />
+        <p class="text">Send up to 10 GB</p>
+        <hr class="seperator" />
+        <button class="btn">LEARN MORE</button>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Master</h2>
+        <h1 class="row price-title">
+          <span>$</span>
+          <span class="price master">39.99</span>
+        </h1>
+        <hr class="seperator" />
+        <p class="text">2 TB Storage</p>
+        <hr class="seperator" />
+        <p class="text">10 Users Allowed</p>
+        <hr class="seperator" />
+        <p class="text">Send up to 20 GB</p>
+        <hr class="seperator" />
+        <button class="btn">LEARN MORE</button>
+      </div>
+
+    </div>
+
+    <img class="bg-bottom" src="images/bg-bottom.svg" alt="bottom background" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

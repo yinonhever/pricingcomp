@@ -1,0 +1,242 @@
+/* GENERAL */
+
+body {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #f6f6fe;
+  color: #6d708d;
+  margin: 5% 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+
+/* BACKGROUND PATTERNS */
+
+.bg-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 20%;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: 0;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  width: 20%;
+}
+
+
+/* PRICE TOGGLE */
+
+.selector-text {
+  color: #b3b5c6;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+  margin: 0 1.5%;
+}
+
+#toggler {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  right: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  border-radius: 34px;
+  transition: .3s;
+}
+
+#toggler:checked + .slider:before {
+  transform: translateX(-30px);
+}
+
+@media all and (min-width: 901px) {
+  .slider:hover {
+    opacity: 0.7;
+  }
+}
+
+
+/* PRICING SECTION */
+
+#pricing {
+  margin: 5% auto;
+}
+
+.card {
+  width: 25%;
+  padding: 2% 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.card-middle {
+  padding: 3.5% 0;
+  background-image: linear-gradient(to right bottom, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+}
+
+.card-title {
+  font-size: 17px;
+}
+
+.price-title {
+  color: #494c5f;
+  margin: 5% 0 8%;
+}  
+
+.price {
+  font-size: 3.5rem;
+  margin-left: 5px;
+}
+
+.seperator {
+  border: none;
+  height: 1px;
+  background-color: #cccccc;
+  width: 80%;
+  margin: 5% auto;
+}
+
+.btn {
+  border-radius: 7px;
+  border: 1px solid transparent;
+  width: 80%;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #a3a8f0, #959aec, #868be7, #787de2, #696fdd);
+  padding: 4%;
+  font-family: "Montserrat";
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5% 0 3%;
+}
+
+.btn:hover {
+  outline: none;
+  background: #ffffff;
+  color: #868be7;
+  border: 1px solid #868be7;
+}
+
+.card-middle .card-title, .card-middle .price-title, .card-middle .text {
+  color: #ffffff;
+}
+
+.card-middle .seperator {
+  background-color: #ffffff;
+}
+
+.card-middle .btn {
+  background: #ffffff;
+  color: #868be7;
+}
+
+.card-middle .btn:hover {
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+
+/* MOBILE VIEW */
+
+@media all and (max-width: 900px) {
+  body {
+    margin: 12% 0;
+  }
+
+  .row {
+    margin-top: 10%;
+  }
+
+  .switch {
+    margin: 0 5%;
+  }
+
+   #pricing {
+     display: block;
+     padding: 0 6%;
+     margin-top: 12%;
+   }
+   
+   .card {
+     width: 88%;
+     margin: 10% auto;
+     padding: 5%;
+   }
+   
+   .card-middle {
+      padding: 5%;
+   }
+
+   .seperator, .btn {
+    width: 93%;
+   }
+
+   .btn {
+     padding: 5%;
+   }
+   
+   .bg-top {
+    width: 45%;
+   }
+   
+   .bg-bottom {
+     display: none;
+   }
+}
+
+
+/* TABLET VIEW */
+
+@media all and (min-width: 600px) and (max-width: 900px) {
+  body {
+    margin: 6% 0;
+  }
+  
+  .row, #pricing {
+    margin-top: 5%;
+  }
+  
+  .card {
+    width: 80%;
+    margin: 7% auto;
+  }
+}
+
